@@ -25,3 +25,7 @@ Some test contracts for CITA
 * SimpleStorage
 
     Common test example.
+
+* LifeTimeExample
+    
+    Whole contract life time example.
