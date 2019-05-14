@@ -5,7 +5,7 @@ contract LifeTimeExample {
     uint storedData;
     bool public frozen;
 
-    constructor() public {
+    constructor() public payable {
         owner = msg.sender;
         frozen = false;
     }
@@ -34,4 +34,6 @@ contract LifeTimeExample {
     function get() view public returns (uint) {
         return storedData;
     }
+
+    function() public payable {}
 }
