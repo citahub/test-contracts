@@ -2,30 +2,34 @@
 
 Some test contracts for CITA
 
-* AutoExec
+* AutoExec.sol
 
     Used for auto exec feature.
 
-* MyToken
+* MyToken.sol
 
     Used fo cross chain.
 
-* OpUint8
+* OpUint8.sol
 
     Used for operation of uint8.
 
-* OutQuota
+* OutQuota.sol
 
     Used for out of quota error.
 
-* SelfAdd
+* SelfAdd.sol
 
     Used for batch tx.
 
-* SimpleStorage
+* SimpleStorage.sol
 
     Common test example.
 
-* LifeTimeExample
-    
+* LifeTimeExample.sol
+
     Whole contract life time example.
+
+* rust_hello.rs
+
+    For native contract of Rust.
