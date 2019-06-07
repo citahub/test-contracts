@@ -33,3 +33,19 @@ Some test contracts for CITA
 * rust_hello.rs
 
     For native contract of Rust.
+
+* AccountGasLimitReached
+
+    Used for interface test.
+
+* ERC20-Token
+
+    ERC20 Token contracts.
+
+* HelloWorld.sol
+
+    Just a simple example.
+
+* Revered.sol
+
+    Used for interface test.
