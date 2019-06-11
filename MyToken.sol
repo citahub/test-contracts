@@ -1,6 +1,6 @@
 pragma solidity ^0.4.24;
 
-import "../../src/native/CrossChain.sol";
+import "../../scripts/contracts/src/native/CrossChain.sol";
 
 contract MyToken is CrossChain {
     /* This creates an array with all balances */
