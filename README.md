@@ -38,9 +38,9 @@ Some test contracts for CITA
 
     Used for interface test.
 
-* ERC20-Token
+* contracts
 
-    ERC20 Token contracts.
+    contracts from OpenZepplin.
 
 * HelloWorld.sol
 
@@ -49,3 +49,9 @@ Some test contracts for CITA
 * Revered.sol
 
     Used for interface test.
+
+## License
+
+This software includes third party open source software component: `Smart Contract Solutions`.
+It has its own license. Please see `.3rd_parth_licenses/OpenZepplin/LICENSE`.
+The source is from [openzeppelin-contracts](https://github.com/OpenZeppelin/openzeppelin-contracts/tree/v2.1.1) including `contracts` folders.
