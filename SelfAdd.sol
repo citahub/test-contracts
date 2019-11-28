@@ -1,7 +1,7 @@
 pragma solidity ^0.4.24;
 
 /// @title An example contract to test batch tx
-/// @author ["Cryptape Technologies <contact@cryptape.com>"]
+/// @author ["Rivtower Technologies <contact@rivtower.com>"]
 contract SelfAdd {
     uint public x;
 
