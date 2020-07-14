@@ -19,7 +19,7 @@ impl Contract for HelloWorld {
         &mut self,
         params: &VmExecParams,
         _context: &Context,
-        data_provider: &mut DataProvider,
+        data_provider: &mut dyn DataProvider,
     ) -> Result<InterpreterResult, NativeError> {
         method_tools::extract_to_u32(&params.data[..]).and_then(|signature| match signature {
             0 => self.init(params, data_provider),
@@ -29,7 +29,7 @@ impl Contract for HelloWorld {
             _ => Err(NativeError::Internal("out of gas".to_string())),
         })
     }
-    fn create(&self) -> Box<Contract> {
+    fn create(&self) -> Box<dyn Contract> {
         Box::new(HelloWorld::default())
     }
 }
@@ -47,7 +47,7 @@ impl HelloWorld {
     fn init(
         &mut self,
         _params: &VmExecParams,
-        _data_provider: &mut DataProvider,
+        _data_provider: &mut dyn DataProvider,
     ) -> Result<InterpreterResult, NativeError> {
         Ok(InterpreterResult::Normal(vec![], 100, vec![]))
     }
@@ -55,7 +55,7 @@ impl HelloWorld {
     fn update(
         &mut self,
         params: &VmExecParams,
-        data_provider: &mut DataProvider,
+        data_provider: &mut dyn DataProvider,
     ) -> Result<InterpreterResult, NativeError> {
         self.output.resize(32, 0);
 
@@ -75,7 +75,7 @@ impl HelloWorld {
     fn balance_get(
         &mut self,
         params: &VmExecParams,
-        data_provider: &mut DataProvider,
+        data_provider: &mut dyn DataProvider,
     ) -> Result<InterpreterResult, NativeError> {
         self.output.resize(32, 0);
         self.balance
